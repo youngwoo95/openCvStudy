@@ -1,3 +1,5 @@
+python -m venv .venv
+
 .\.venv\Scripts\Activate.ps1 // 가상환경 활성화
 
 PS C:\Users\kyw\PythonImageWorkspace> .\.venv\Scripts\Activate.ps1
@@ -38,8 +40,14 @@ git commit -m "Initial commit"
 그다음 GitHub에서 새 repository를 하나 만들어. 예를 들어 저장소 주소가 이렇게 생겼다면:
 
 https://github.com/사용자이름/저장소이름.git
+git remote add origin https://github.com/youngwoo95/openCvStudy.git
 터미널에서 연결하고 올려:
 
 git branch -M main
 git remote add origin https://github.com/사용자이름/저장소이름.git
 git push -u origin main
+
+=== 추가로 올리려면
+git add .
+git commit -m "수정 내용 설명"
+git push
